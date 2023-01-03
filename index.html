@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>ÏòËÀ¶øÉú</title>
+<title>å‘æ­»è€Œç”Ÿ</title>
 <link rel="icon" href="img/hourglass.jpg" type="image/x-icon">
 <script language="javascript" type="text/javascript">
 var interval = 1000;
@@ -18,7 +19,7 @@ var hour=Math.floor((leftsecond-day1*24*60*60)/3600);
 var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60);
 var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
 var cc = document.getElementById(divname);
-cc.innerHTML = "¾àÀë"+year+"Äê"+month+"ÔÂ"+day+"ÈÕ»¹ÓĞ£º"+day1+"Ìì"+hour+"Ğ¡Ê±"+minute+"·Ö"+second+"Ãë";
+cc.innerHTML = "è·ç¦»"+year+"å¹´"+month+"æœˆ"+day+"æ—¥è¿˜æœ‰ï¼š"+day1+"å¤©"+hour+"å°æ—¶"+minute+"åˆ†"+second+"ç§’";
 }
 window.setInterval(function(){ShowCountDown(2033,3,31,'divdown1');}, interval);
 </script>
