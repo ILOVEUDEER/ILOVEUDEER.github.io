@@ -1,11 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Refresh" content="3;url=2.html">
-<title>é€ä½ ä¸€ä¸ªå°ç¤¼ç‰©ï¼</title>
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>ÏòËÀ¶øÉú</title>
+<link rel="icon" href="img/hourglass.jpg" type="image/x-icon">
+<script language="javascript" type="text/javascript">
+var interval = 1000;
+function ShowCountDown(year,month,day,divname)
+{
+var now = new Date();
+var endDate = new Date(year, month-1, day);
+var leftTime=endDate.getTime()-now.getTime();
+var leftsecond = parseInt(leftTime/1000);
+//var day1=parseInt(leftsecond/(24*60*60*6));
+var day1=Math.floor(leftsecond/(60*60*24));
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600);
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60);
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
+var cc = document.getElementById(divname);
+cc.innerHTML = "¾àÀë"+year+"Äê"+month+"ÔÂ"+day+"ÈÕ»¹ÓĞ£º"+day1+"Ìì"+hour+"Ğ¡Ê±"+minute+"·Ö"+second+"Ãë";
+}
+window.setInterval(function(){ShowCountDown(2033,3,31,'divdown1');}, interval);
+</script>
 </head>
 <body>
-	<h1>æˆ‘æŠŠæˆ‘çš„å¿ƒå–å‡ºæ¥ç»™ä½ ,ç¨ç­‰ä¸€ä¸‹å“¦ï¼3ç§’é’Ÿå°±å¥½ï¼</h1>
+<div id="divdown1"></div>
 </body>
 </html>
