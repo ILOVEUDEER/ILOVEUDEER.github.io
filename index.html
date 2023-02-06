@@ -20,10 +20,12 @@ var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
 var cc = document.getElementById(divname);
 cc.innerHTML =day1+"d"+hour+"h"+minute+"m"+second+"s";
 }
-window.setInterval(function(){ShowCountDown(2033,3,31,'divdown1');}, interval);
+window.setInterval(function(){ShowCountDown(2024,7,15,'divdown1');}, interval);
+window.setInterval(function(){ShowCountDown(2033,3,31,'divdown2');}, interval);
 </script>
 </head>
 <body>
-	<big/><big/><big/><big/><big/><big/><big/><big/><big/><big/><big/><b><center><div id="divdown1"></div></center></b>
+	<big/><big/><big/><big/><big/><big/><big/><big/><big/><center>Love:<div id="divdown1"></div></center>
+	<center>Death£º<div id="divdown2"></div></center>
 </body>
 </html>
